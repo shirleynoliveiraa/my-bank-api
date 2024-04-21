@@ -1,0 +1,78 @@
+
+
+
+PROCESSO DE I/O: entrada e saída de dados
+- paralisa o processo: modelo bloqueante (Blocking-thread)
+
+- enquanto uma requisição é processada, as outras ficam em espera
+- elas criam várias threads
+- normalmente tem que fzr upgrade nos hardwares
+
+NODE:
+- não bloqueante
+- boa performance
+- single-thread (cada aplicação possui um único processo)
+- não é que o NODE é melhor ou pior, depende do objetivo do projeto
+- usa muita programação assíncrona
+- callbacks
+- não é muito recomendado para aplicações que lidam com algorítimos complexos e que consumam muita CPU
+- essa limitação pode ser contornada com WORKERS
+
+-----------------
+importação e exportação:
+CommonJS: require
+ES Modules: import (mais atual)
+
+- modulos nativos: file system, readline, events, http
+
+- usando o winston para logs
+- criar os métodos (GET, POST, PUT, PATCH, DELETE)
+- criar os logs
+- criar as validações
+- implementar CORS: cross origin resource sharing (compartilhamento de recurso de origem cruzada),
+é uma segurança que tem em páginas web que quando vc fornece uma API, somente paginas que estão
+hospedadas junto com essa API podem conseguir acessar ela. Por exemplo, se vc tiver uma API hosteada em um servidor e tiver uma outra página que estiver em um outro servidor, outro dominio tentar acessar, vai ser bloqueada, vai dar um erro de CORS. Aí tem como configurar, de liberar pra todo mundo acessar ou escolher determinadas páginas.
+- documentação de api com swagger editor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
